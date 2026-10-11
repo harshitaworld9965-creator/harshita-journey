@@ -1,0 +1,60 @@
+.interfaces {
+  background: #090812;
+  perspective: 1200px;
+}
+
+.ui-year {
+  position: absolute;
+  left: -2vw;
+  bottom: 4vh;
+  z-index: 2;
+  font-size: clamp(6rem, 30vw, 24rem);
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(111, 211, 255, 0.55);
+  pointer-events: none;
+}
+
+.ui-heading {
+  font-size: clamp(3.2rem, 11vw, 8rem);
+  color: #f2f0ff;
+}
+
+/* --- Floating glass cards --- */
+.ui-cards {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  transform-style: preserve-3d;
+}
+
+.ui-card {
+  position: absolute;
+  width: clamp(150px, 34vw, 280px);
+  aspect-ratio: 4 / 3;
+  padding: 14px;
+  display: grid;
+  gap: 8px;
+  align-content: start;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+.ui-card i {
+  display: block;
+  height: 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.ui-card i:nth-child(1) { width: 50%; background: var(--coral); }
+.ui-card i:nth-child(3) { width: 75%; }
+.ui-card i:nth-child(4) { width: 40%; background: rgba(111, 211, 255, 0.7); }
+
+.ui-card-a { left: 6vw; top: 12vh; }
+.ui-card-b { right: 5vw; top: 22vh; }
+.ui-card-c { left: 18vw; bottom: 10vh; }

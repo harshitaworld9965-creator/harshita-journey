@@ -1,0 +1,23 @@
+.scene.end {
+  height: 90svh;
+}
+
+.end-copy {
+  text-align: center;
+  justify-items: center;
+}
+
+.end-heading {
+  font-size: clamp(3.5rem, 16vw, 13rem);
+}
+
+.end a {
+  color: var(--chalk);
+  text-decoration: none;
+  border-bottom: 1px solid var(--coral);
+}
+
+.end a:focus-visible {
+  outline: 2px solid var(--sky);
+  outline-offset: 4px;
+}
